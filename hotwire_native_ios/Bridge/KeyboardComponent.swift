@@ -34,47 +34,26 @@ final class KeyboardComponent: BridgeComponent {
                 webView.toggleCustomToolbar()
             case .heading1:
                 webView.heading1 = {
-                    self.heading1()
+                    self.reply(to: Event.heading1.rawValue)
                 }
-
             case .bold:
                 webView.bold = {
-                    self.bold()
+                    self.reply(to: Event.bold.rawValue)
                 }
             case .italic:
                 webView.italic = {
-                    self.italic()
+                    self.reply(to: Event.italic.rawValue)
                 }
             case .undo:
                 webView.undo = {
-                    self.undo()
+                    self.reply(to: Event.undo.rawValue)
                 }
             case .redo:
                 webView.redo = {
-                    self.redo()
+                    self.reply(to: Event.redo.rawValue)
                 }
             }
         }
-    }
-
-    func heading1() {
-        reply(to: Event.heading1.rawValue)
-    }
-
-    func bold() {
-        reply(to: Event.bold.rawValue)
-    }
-
-    func italic() {
-        reply(to: Event.italic.rawValue)
-    }
-
-    func undo() {
-        reply(to: Event.undo.rawValue)
-    }
-
-    func redo() {
-        reply(to: Event.redo.rawValue)
     }
 }
 
@@ -86,11 +65,5 @@ extension KeyboardComponent {
         case italic
         case undo
         case redo
-    }
-}
-
-private extension KeyboardComponent {
-    struct MessageData: Codable {
-        let title: String
     }
 }
