@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FE981DD32CB95BE1002294A3 /* HotwireNative in Frameworks */ = {isa = PBXBuildFile; productRef = FE981DD22CB95BE1002294A3 /* HotwireNative */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FE981DB42CB95BA7002294A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE981DD32CB95BE1002294A3 /* HotwireNative in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = hotwire_native_ios;
 			packageProductDependencies = (
+				FE981DD22CB95BE1002294A3 /* HotwireNative */,
 			);
 			productName = hotwire_native_ios;
 			productReference = FE981D9D2CB95BA6002294A3 /* hotwire_native_ios.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = FE981D942CB95BA6002294A3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FE981DD12CB95BE1002294A3 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FE981D9E2CB95BA6002294A3 /* Products */;
 			projectDirPath = "";
@@ -294,7 +303,7 @@
 				INFOPLIST_FILE = hotwire_native_ios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +331,7 @@
 				INFOPLIST_FILE = hotwire_native_ios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE981DD12CB95BE1002294A3 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/hotwire-native-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE981DD22CB95BE1002294A3 /* HotwireNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE981DD12CB95BE1002294A3 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */;
+			productName = HotwireNative;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE981D952CB95BA6002294A3 /* Project object */;
 }
